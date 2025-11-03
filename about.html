@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="/Pics/logo.png" class="h-4 w-4" />
+  <link rel="icon" type="image/png" href="./Pics/logo.png" class="h-4 w-4" />
   <title>About Deeper Life Bible Church</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
@@ -14,43 +14,40 @@
 
 
 <!-- Navbar -->
-<nav class="bg-white fixed top-0 left-0 w-full z-50">
+<nav class="bg-gray-50 fixed top-0 left-0 w-full z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     
     <!-- Logo -->
     <a href="index.html" class="flex items-center space-x-2">
-      <img src="/Pics/logo.png" alt="Logo" class="h-10 w-10 object-contain">
-      <span class="script-font text-3xl font-bold text-black-900">Deeper Life Bible Church Rochester</span>
+      <img src="./Pics/logo.png" alt="Logo" class="h-10 w-10 object-contain">
+      <span class="script-font text-4xl font-bold text-black-900">Deeper Life Bible Church Rochester NY</span>
     </a>
 
     <!-- Nav Links -->
-    <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
-      <li><a href="index.html" class="hover:text-red-600 transition">Home</a></li>
-      <li><a href="about.html" class="hover:text-red-600 transition">About Us</a></li>
-      <li><a href="./index.html#locations" class="hover:text-red-600 transition">Locations</a></li>
-      <!-- <li><a href="resources.html" class="hover:text-blue-600 transition">Resources</a></li>
-      <li><a href="#contact" class="hover:text-blue-600 transition">Contact Us</a></li> -->
-      <li><a href="https://dclm.org" target="_blank" class="hover:text-red-600 transition">Global HQ</a></li>
+    <ul class="hidden md:flex space-x-8 text-black font-bold text-lg">
+      <li><a href="index.html" class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Home</a></li>
+      <li><a href="about.html" class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">About Us</a></li>
+      <li><a href="#locations" class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Locations</a></li>
+      <li><a href="https://dclm.org" target="_blank" class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Global HQ</a></li>
     </ul>
 
     <!-- Mobile Menu Button -->
 
     <button id="menu-btn" class="md:hidden focus:outline-none">
-      <img src="/Icons/hamburger.svg" alt="Menu" class="h-6 w-6">
+      <img src="./Icons/hamburger.svg" alt="Menu" class="h-6 w-6">
     </button>
   </div>
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
-    <ul class="flex flex-col space-y-2 p-4 text-gray-700 font-medium">
-      <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
-      <li><a href="about.html" class="hover:text-blue-600 transition">About Us</a></li>
-      <li><a href="ministries.html" class="hover:text-blue-600 transition">Our Ministries</a></li>
-      <li><a href="resources.html" class="hover:text-blue-600 transition">Resources</a></li>
-      <li><a href="#contact" class="hover:text-blue-600 transition">Contact Us</a></li>
-      <li><a href="https://dclm.org" target="_blank" class="hover:text-blue-600 transition">Global HQ</a></li>
+    <ul class="flex flex-col divide-y divide-gray-200 text-black font-bold">
+      <li><a href="index.html" class="block py-6 px-6 hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Home</a></li>
+      <li><a href="about.html" class="block py-6 px-6 hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">About Us</a></li>
+      <li><a href="index.html#locations" class="block py-6 px-6 hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Locations</a></li>
+      <li><a href="https://dclm.org" target="_blank" class="block py-6 px-6 hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Global HQ</a></li>
     </ul>
   </div>
+
 
   <script>
     const btn = document.getElementById('menu-btn');
@@ -60,39 +57,39 @@
 </nav>
 
 <!-- Info Bar -->
-<section class="bg-[#061c36] text-white mt-24 md:mt-16 text-md py-4 mt-16 md:fixed top-0 left-0 z-50 w-full">
+<section class="bg-[#061c36] text-white mt-24 md:mt-16 text-md py-4 md:fixed top-0 left-0 z-50 w-full">
   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-right justify-between gap-6 md:gap-0">
     
     <!-- Address -->
-    <div class="flex items-center gap-3">
-      <img src="/icons/location.svg" alt="Address" class="h-8 w-8">
+    <div class="flex items-center gap-3 mt-4 md:mt-0">
+      <img src="./Icons/location.svg" alt="Address" class="h-8 w-8">
       <div>
-        <p class="font-semibold">Address</p>
-        <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank" rel="noopener noreferrer" class="hover:text-white text-gray-300">
-          3699 West Henrietta Road, Rochester, NY, 14623
+        <p>Address</p>
+        <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300 text-white font-bold">
+          3699 West Henrietta Road, Rochester, NY 14623
         </a>
       </div>
     </div>
 
-    <div class="hidden md:block h-8 w-px bg-gray-300"></div>
+    <div class="hidden md:block items-center w-px bg-gray-300"></div>
 
     <!-- Phone -->
     <div class="flex items-center gap-3">
-      <img src="/icons/phone.svg" alt="Phone" class="h-8 w-8">
+      <img src="./Icons/phone.svg" alt="Phone" class="h-6 w-6">
       <div>
-        <p class="font-semibold">Phone</p>
-        <p class="text-gray-300">+1 (585) 260-1943</p>
+        <p>Phone</p>
+        <p class="text-white font-bold">+1 (585) 260-1943</p>
       </div>
     </div>
 
-    <div class="hidden md:block h-8 w-px bg-gray-300"></div>
+    <div class="hidden md:block items-center w-px bg-gray-300"></div>
 
     <!-- Email -->
     <div class="flex items-center gap-3">
-      <img src="/icons/mail.svg" alt="Email" class="h-8 w-8">
+      <img src="./Icons/mail.svg" alt="Email" class="h-8 w-8">
       <div>
-        <p class="font-semibold">Email</p>
-        <a href="mailto:dlbcrochester@gmail.com" class="hover:text-white text-gray-300">dlbcrochester@gmail.com</a>
+        <p>Email</p>
+        <a href="mailto:dlbcrochester@gmail.com" class="hover:text-gray-300 text-white font-bold">dlbcrochester@gmail.com</a>
       </div>
     </div>
   </div>
@@ -157,7 +154,7 @@
     <h2 class="text-4xl font-bold text-center text-black-800 mb-8">What We Believe</h2>
 
     <!-- Intro -->
-    <div class="text-gray-700 leading-relaxed text-justify mb-10">
+    <div class="text-gray-700 leading-relaxed text-center mb-10">
       <p class="text-lg mb-4">
         <strong class="text-2xl">BIBLE DOCTRINES: ABRIDGED EDITION</strong><br>
         Acts 2:42; I Timothy 4:16; Titus 1:9
@@ -166,6 +163,8 @@
         “Beloved, when I gave all diligence to write unto you of the common salvation, it was needful for me to write unto you,
         and exhort [you] that ye should earnestly contend for the faith which was once delivered unto the saints.” (Jude 3)
       </p>
+    </div>
+    <div class="text-gray-700 leading-relaxed mb-4">
       <p class="text-xl">
         God’s infallible WORD teaches and we believe:
       </p>
@@ -565,34 +564,34 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-[#061c36] text-gray-300 pt-16 pb-8">
+<footer class="bg-[#061c36] text-gray-300 pt-8 pb-8">
   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 md:justify-items-center">
 
     <!-- Column 1: Church Info -->
      <div class="space-y-3">
       <!-- Church Logo -->
       <div class="flex items-center space-x-3 mb-4">
-        <img src="/Pics/logo.png" alt="Church Logo" class="h-12 w-12 object-contain">
-        <h3 class="script-font text-2xl font-semibold text-white">Deeper Life Bible Church Rochester</h3>
+        <img src="./Pics/logo.png" alt="Church Logo" class="h-12 w-12 object-contain">
+        <h3 class="script-font text-3xl font-semibold text-white">Deeper Life Bible Church Rochester NY</h3>
       </div>
 
       <!-- Address -->
       <div class="flex items-start space-x-3">
-        <img src="/icons/location.svg" alt="Map Icon" class="h-6 w-6 mt-1">
+        <img src="./Icons/location.svg" alt="Map Icon" class="h-6 w-6">
         <p class="text-lg">
-          3699 West Henrietta Road, Rochester, NY, 14623
+          3699 West Henrietta Road,<br/>Rochester, NY 14623
         </p>
       </div>
 
       <!-- Phone -->
       <div class="flex items-center space-x-3">
-        <img src="/icons/phone.svg" alt="Phone Icon" class="h-6 w-6">
+        <img src="./Icons/phone.svg" alt="Phone Icon" class="h-6 w-6">
         <p class="text-lg">+1 (585) 260-1943</p>
       </div>
 
       <!-- Email -->
       <div class="flex items-center space-x-3">
-        <img src="/icons/mail.svg" alt="Mail Icon" class="h-6 w-6">
+        <img src="./Icons/mail.svg" alt="Mail Icon" class="h-6 w-6">
         <p class="text-lg">dlbcrochester@gmail.com</p>
       </div>
     </div>
@@ -604,7 +603,8 @@
       <ul class="space-y-2 text-lg">
         <li><a href="#home" class="hover:text-white transition">Home</a></li>
         <li><a href="#about" class="hover:text-white transition">About Us</a></li>
-        <!-- <li><a href="#pastor" class="hover:text-white transition">Message from Pastor</a></li>
+        <!-- <li><a href="#special-meetings" class="hover:text-white transition">Special Meetings</a></li>
+        <li><a href="#pastor" class="hover:text-white transition">Message from Pastor</a></li>
         <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li> -->
         <li><a href="https://dclm.org/" class="hover:text-white transition">Global HQ</a></li>
       </ul>
@@ -614,9 +614,9 @@
     <div>
       <h3 class="text-xl font-semibold text-white mb-4">Locations</h3>
       <ul class="space-y-2 text-lg">
-        <li><a href="https://dailymanna.app/" class="hover:text-white transition">Rochester Branch</a></li>
-        <li><a href="https://dailymanna.app/" class="hover:text-white transition">Buffalo Branch</a></li>
-        <li><a href="https://dailymanna.app/" class="hover:text-white transition">Potsdam Branch</a></li>
+        <li><a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank" class="hover:text-white transition">Rochester, NY</a></li>
+        <li><a href="https://maps.app.goo.gl/gDEQ2PDXxi1dS7CY7" target="_blank" class="hover:text-white transition">Buffalo, NY</a></li>
+        <li><a href="https://maps.app.goo.gl/Loz4nztdJNNEJxbZA" target="_blank" class="hover:text-white transition">Potsdam, NY</a></li>
       </ul>
 
 
@@ -632,7 +632,8 @@
 
   <!-- Bottom -->
   <div class="border-t border-gray-600 mt-10 pt-6 text-center text-sm md:text-md lg:text-lg text-gray-400">
-    <p>&copy; <span id="year"></span> Deeper Life Bible Church Rochester. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Deeper Life Bible Church Rochester NY</p>
+    <p>All rights reserved</p>
   </div>
 
   <script>
@@ -640,13 +641,6 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </footer>
-
-
-
-
-
-
-
 
 </body>
 </html>
