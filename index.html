@@ -98,88 +98,111 @@
   </div>
 </section>
 
-<!-- Hero Section with Horizontal Days of Meeting -->
-<section id="home" class="relative w-full h-[100vh] overflow-hidden md:mt-16">
+<!-- Hero Section with Responsive Carousel -->
+<section id="home" class="relative w-full overflow-hidden md:mt-16">
 
-  <!-- Carousel -->
-  <div class="absolute inset-0 w-full h-full">
-    <img src="/Pics/12.jpg" class="absolute inset-0 w-full h-full object-cover animate-fade" />
-    <img src="/Pics/1.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[5s]" />
-    <img src="/Pics/2.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[10s]" />
-    <img src="/Pics/3.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[15s]" />
-    <img src="/Pics/4.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[20s]" />
-    <img src="/Pics/6.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[25s]" />
-    <img src="/Pics/11.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[30s]" />
-    <img src="/Pics/5.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[35s]" />
-    <img src="/Pics/9.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[40s]" />
-    <img src="/Pics/10.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[45s]" />
+  <!-- =================== DESKTOP CAROUSEL =================== -->
+  <div class="hidden md:block relative w-full h-[100vh] overflow-hidden z-0">
+    <div class="absolute inset-0 w-full h-full">
+      <img src="/Pics/12.jpg" class="absolute inset-0 w-full h-full object-cover animate-fade" />
+      <img src="/Pics/1.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[5s]" />
+      <img src="/Pics/2.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[10s]" />
+      <img src="/Pics/3.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[15s]" />
+      <img src="/Pics/4.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[20s]" />
+      <img src="/Pics/6.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[25s]" />
+      <img src="/Pics/11.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[30s]" />
+      <img src="/Pics/5.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[35s]" />
+    </div>
   </div>
 
-
-  
-
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black/60"></div>
-
-  <!-- Content -->
-  <div class="relative z-10 h-full mx-auto px-6 flex flex-col items-center justify-center text-center text-white space-y-6">
-    <h3 class="text-xl md:text-2xl lg:text-3xl font-bold">Welcome to</h3>
-    <h1 class="script-font text-4xl md:text-6xl lg:text-8xl font-bold">Deeper Life Bible Church Rochester, NY</h1>
-    <p class="text-md md:text-lg lg:text-2xl max-w-2xl">Holiness unto the Lord is our watchword and song — a call to purity, 
-      a life of purpose, and a passion for reaching the lost with the message of salvation.</p>
-
-    <!-- Days of Meeting -->
-    <!-- <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-10 bg-white/10 backdrop-blur-lg border border-white/30 rounded-xl p-6 w-full max-w-xs sm:max-w-sm md:max-w-4xl"> -->
-
-    <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-10 bg-white/10 backdrop-blur-lg border border-white/30 rounded-lg md:rounded-xl p-6">
-      <div class="text-center">
-        <h4 class="text-lg md:text-2xl font-semibold">Sunday Worship Service</h4>
-        <p class="text-md md:text-xl text-gray-200">Sundays @ 9:45 AM ET</p>
-      </div>
-
-      <!-- Divider -->
-      <div class="md:block hidden h-10 w-px bg-white/30"></div>
-      <div class="md:hidden border-t border-white/30 w-60"></div>
-
-      <div class="text-center">
-        <h4 class="text-lg md:text-2xl font-semibold">Tuesday Bible Study</h4>
-        <p class="text-md md:text-xl text-gray-200">Tuesdays @ 6:00 PM ET</p>
-      </div>
-
-      <!-- Divider -->
-      <div class="md:block hidden h-10 w-px bg-white/30"></div>
-      <div class="md:hidden border-t border-white/30 w-60"></div>
-
-      <div class="text-center">
-        <h4 class="text-lg md:text-2xl font-semibold">Friday Revival Hour</h4>
-        <p class="text-md md:text-xl text-gray-200">Fridays @ 6:00 PM ET</p>
-      </div>
+  <!-- =================== MOBILE CAROUSEL =================== -->
+  <div class="block md:hidden relative w-full h-[90vh] overflow-hidden z-0">
+    <div class="absolute inset-0 w-full h-full">
+      <img src="/Pics/20.jpg" class="absolute inset-0 w-full h-full object-cover animate-fade-mobile" />
+      <img src="/Pics/21.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade-mobile delay-[5s]" />
+      <img src="/Pics/22.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade-mobile delay-[10s]" />
+      <img src="/Pics/23.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade-mobile delay-[15s]" />
+      <img src="/Pics/24.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade-mobile delay-[20s]" />
+      <img src="/Pics/28.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade-mobile delay-[25s]" />
+      <img src="/Pics/26.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade-mobile delay-[30s]" />
+      <img src="/Pics/27.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade-mobile delay-[35s]" />
     </div>
-    <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" 
+  </div>
+
+  <!-- Overlay (dark layer above images) -->
+  <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+  <!-- Hero Text Content -->
+  <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white px-6 space-y-6">
+    <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">Welcome to</h3>
+    <h1 class="script-font text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+      Deeper Life Bible Church Rochester, NY
+    </h1>
+    <p class="text-sm sm:text-base md:text-lg lg:text-2xl max-w-2xl text-gray-200">
+      Holiness unto the Lord is our watchword and song — a call to purity, a life of purpose,
+      and a passion for reaching the lost with the message of salvation.
+    </p>
+
+<!-- Days of Meeting (hidden on mobile) -->
+<div class="hidden md:flex flex-row items-center justify-center gap-6 mt-10 bg-white/10 backdrop-blur-lg border border-white/30 rounded-lg md:rounded-xl p-6">
+  <div class="text-center">
+    <h4 class="text-base sm:text-lg md:text-2xl font-semibold">Sunday Worship Service</h4>
+    <p class="text-sm sm:text-md md:text-xl text-gray-200">Sundays @ 9:45 AM ET</p>
+  </div>
+
+  <!-- Divider -->
+  <div class="h-10 w-px bg-white/30"></div>
+
+  <div class="text-center">
+    <h4 class="text-base sm:text-lg md:text-2xl font-semibold">Tuesday Bible Study</h4>
+    <p class="text-sm sm:text-md md:text-xl text-gray-200">Tuesdays @ 6:00 PM ET</p>
+  </div>
+
+  <!-- Divider -->
+  <div class="h-10 w-px bg-white/30"></div>
+
+  <div class="text-center">
+    <h4 class="text-base sm:text-lg md:text-2xl font-semibold">Friday Revival Hour</h4>
+    <p class="text-sm sm:text-md md:text-xl text-gray-200">Fridays @ 6:00 PM ET</p>
+  </div>
+</div>
+
+
+    <!-- CTA Button -->
+    <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9"
        target="_blank"
        class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-md text-white font-semibold text-lg transition">
       Worship With Us
     </a>
   </div>
 
-  
-  <!-- Animation -->
+  <!-- =================== ANIMATION STYLES =================== -->
   <style>
-    /* Smoother fade transition for 10 images */
+    /* Desktop carousel animation (8 images × 5s = 40s loop) */
     @keyframes fade {
       0%   { opacity: 0; }
-      5%   { opacity: 1; }   /* Fade in */
-      10%  { opacity: 1; }   /* Stay visible */
-      15%  { opacity: 0; }   /* Fade out */
+      5%   { opacity: 1; }
+      10%  { opacity: 1; }
+      15%  { opacity: 0; }
       100% { opacity: 0; }
     }
-
-    /* Full cycle = 50s (10 images × 5s per image) */
     .animate-fade {
-      animation: fade 50s infinite ease-in-out;
+      animation: fade 40s infinite ease-in-out;
     }
 
-    /* Sequential animation delays */
+    /* Mobile carousel animation */
+    @keyframes fadeMobile {
+      0%   { opacity: 0; }
+      5%   { opacity: 1; }
+      10%  { opacity: 1; }
+      15%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .animate-fade-mobile {
+      animation: fadeMobile 40s infinite ease-in-out;
+    }
+
+    /* Animation delays */
     .delay-\[5s\]  { animation-delay: 5s; }
     .delay-\[10s\] { animation-delay: 10s; }
     .delay-\[15s\] { animation-delay: 15s; }
@@ -187,17 +210,15 @@
     .delay-\[25s\] { animation-delay: 25s; }
     .delay-\[30s\] { animation-delay: 30s; }
     .delay-\[35s\] { animation-delay: 35s; }
-    .delay-\[40s\] { animation-delay: 40s; }
-    .delay-\[45s\] { animation-delay: 45s; }
 
-    /* Ensure all images are layered correctly */
+    /* Smooth transitions */
     .absolute.inset-0 {
       transition: opacity 2s ease-in-out;
     }
   </style>
 
-
 </section>
+
 
 
 <!-- Hero Section with Carousel and Single Glass Card -->
