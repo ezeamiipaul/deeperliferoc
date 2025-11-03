@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/Pics/logo.png" class="h-4 w-4" />
+  <title>Deeper Life Bible Church Rochester</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+
+
+<!-- Navbar -->
+<nav class="bg-white fixed top-0 left-0 w-full z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="/Pics/logo.png" alt="Logo" class="h-10 w-10 object-contain">
+      <span class="script-font text-2xl md:text-3xl font-bold text-black-900">Deeper Life Bible Church Rochester NY</span>
+    </a>
+
+    <!-- Nav Links -->
+    <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <li><a href="index.html" class="hover:text-red-600 transition">Home</a></li>
+      <li><a href="about.html" class="hover:text-red-600 transition">About Us</a></li>
+      <li><a href="#locations" class="hover:text-red-600 transition">Locations</a></li>
+      <!-- <li><a href="resources.html" class="hover:text-blue-600 transition">Resources</a></li>
+      <li><a href="#contact" class="hover:text-blue-600 transition">Contact Us</a></li> -->
+      <li><a href="https://dclm.org" target="_blank" class="hover:text-red-600 transition">Global HQ</a></li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <img src="/Icons/hamburger.svg" alt="Menu" class="h-6 w-6">
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+    <ul class="flex flex-col space-y-2 p-4 text-gray-700 font-medium">
+      <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+      <li><a href="about.html" class="hover:text-blue-600 transition">About Us</a></li>
+      <li><a href="#locations" class="hover:text-red-600 transition">Locations</a></li>
+      <!-- <li><a href="ministries.html" class="hover:text-blue-600 transition">Our Ministries</a></li>
+      <li><a href="resources.html" class="hover:text-blue-600 transition">Resources</a></li>
+      <li><a href="#contact" class="hover:text-blue-600 transition">Contact Us</a></li> -->
+      <li><a href="https://dclm.org" target="_blank" class="hover:text-blue-600 transition">Global HQ</a></li>
+    </ul>
+  </div>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</nav>
+
+<!-- Info Bar -->
+<section class="bg-[#061c36] text-white mt-24 md:mt-16 text-md py-4 mt-16 md:fixed top-0 left-0 z-50 w-full">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-right justify-between gap-6 md:gap-0">
+    
+    <!-- Address -->
+    <div class="flex items-center gap-3">
+      <img src="/icons/location.svg" alt="Address" class="h-8 w-8">
+      <div>
+        <p class="font-semibold">Address</p>
+        <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank" rel="noopener noreferrer" class="hover:text-white text-gray-300">
+          3699 West Henrietta Road, Rochester, NY 14623
+        </a>
+      </div>
+    </div>
+
+    <div class="hidden md:block h-8 w-px bg-gray-300"></div>
+
+    <!-- Phone -->
+    <div class="flex items-center gap-3">
+      <img src="/icons/phone.svg" alt="Phone" class="h-8 w-8">
+      <div>
+        <p class="font-semibold">Phone</p>
+        <p class="text-gray-300">+1 (585) 260-1943</p>
+      </div>
+    </div>
+
+    <div class="hidden md:block h-8 w-px bg-gray-300"></div>
+
+    <!-- Email -->
+    <div class="flex items-center gap-3">
+      <img src="/icons/mail.svg" alt="Email" class="h-8 w-8">
+      <div>
+        <p class="font-semibold">Email</p>
+        <a href="mailto:dlbcrochester@gmail.com" class="hover:text-white text-gray-300">dlbcrochester@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hero Section with Horizontal Days of Meeting -->
+<section id="home" class="relative w-full h-[100vh] overflow-hidden md:mt-16">
+
+  <!-- Carousel -->
+  <div class="absolute inset-0 w-full h-full">
+    <img src="/Pics/12.jpg" class="absolute inset-0 w-full h-full object-cover animate-fade" />
+    <img src="/Pics/1.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[5s]" />
+    <img src="/Pics/2.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[10s]" />
+    <img src="/Pics/3.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[15s]" />
+    <img src="/Pics/4.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[20s]" />
+    <img src="/Pics/6.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[25s]" />
+    <img src="/Pics/11.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[30s]" />
+    <img src="/Pics/5.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[35s]" />
+    <img src="/Pics/9.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[40s]" />
+    <img src="/Pics/10.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[45s]" />
+  </div>
+
+
+  
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 h-full mx-auto px-6 flex flex-col items-center justify-center text-center text-white space-y-6">
+    <h3 class="text-xl md:text-2xl lg:text-3xl font-bold">Welcome to</h3>
+    <h1 class="script-font text-4xl md:text-6xl lg:text-8xl font-bold">Deeper Life Bible Church Rochester, NY</h1>
+    <p class="text-md md:text-lg lg:text-2xl max-w-2xl">Holiness unto the Lord is our watchword and song — a call to purity, 
+      a life of purpose, and a passion for reaching the lost with the message of salvation.</p>
+
+    <!-- Days of Meeting -->
+    <!-- <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-10 bg-white/10 backdrop-blur-lg border border-white/30 rounded-xl p-6 w-full max-w-xs sm:max-w-sm md:max-w-4xl"> -->
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-10 bg-white/10 backdrop-blur-lg border border-white/30 rounded-lg md:rounded-xl p-6">
+      <div class="text-center">
+        <h4 class="text-lg md:text-2xl font-semibold">Sunday Worship Service</h4>
+        <p class="text-md md:text-xl text-gray-200">Sundays @ 9:45 AM ET</p>
+      </div>
+
+      <!-- Divider -->
+      <div class="md:block hidden h-10 w-px bg-white/30"></div>
+      <div class="md:hidden border-t border-white/30 w-60"></div>
+
+      <div class="text-center">
+        <h4 class="text-lg md:text-2xl font-semibold">Tuesday Bible Study</h4>
+        <p class="text-md md:text-xl text-gray-200">Tuesdays @ 6:00 PM ET</p>
+      </div>
+
+      <!-- Divider -->
+      <div class="md:block hidden h-10 w-px bg-white/30"></div>
+      <div class="md:hidden border-t border-white/30 w-60"></div>
+
+      <div class="text-center">
+        <h4 class="text-lg md:text-2xl font-semibold">Friday Revival Hour</h4>
+        <p class="text-md md:text-xl text-gray-200">Fridays @ 6:00 PM ET</p>
+      </div>
+    </div>
+    <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" 
+       target="_blank"
+       class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-md text-white font-semibold text-lg transition">
+      Worship With Us
+    </a>
+  </div>
+
+  
+  <!-- Animation -->
+  <style>
+    /* Smoother fade transition for 10 images */
+    @keyframes fade {
+      0%   { opacity: 0; }
+      5%   { opacity: 1; }   /* Fade in */
+      10%  { opacity: 1; }   /* Stay visible */
+      15%  { opacity: 0; }   /* Fade out */
+      100% { opacity: 0; }
+    }
+
+    /* Full cycle = 50s (10 images × 5s per image) */
+    .animate-fade {
+      animation: fade 50s infinite ease-in-out;
+    }
+
+    /* Sequential animation delays */
+    .delay-\[5s\]  { animation-delay: 5s; }
+    .delay-\[10s\] { animation-delay: 10s; }
+    .delay-\[15s\] { animation-delay: 15s; }
+    .delay-\[20s\] { animation-delay: 20s; }
+    .delay-\[25s\] { animation-delay: 25s; }
+    .delay-\[30s\] { animation-delay: 30s; }
+    .delay-\[35s\] { animation-delay: 35s; }
+    .delay-\[40s\] { animation-delay: 40s; }
+    .delay-\[45s\] { animation-delay: 45s; }
+
+    /* Ensure all images are layered correctly */
+    .absolute.inset-0 {
+      transition: opacity 2s ease-in-out;
+    }
+  </style>
+
+
+</section>
+
+
+<!-- Hero Section with Carousel and Single Glass Card -->
+<!-- <section id="home" class="relative w-full h-[120vh] overflow-hidden md:mt-16"> -->
+
+  <!-- Carousel -->
+  <!-- <div class="absolute inset-0 w-full h-full">
+    <img src="/Pics/1.jpg" class="absolute inset-0 w-full h-full object-cover animate-fade" />
+    <img src="/Pics/2.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[5s]" />
+    <img src="/Pics/3.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[10s]" />
+    <img src="/Pics/4.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[15s]" />
+    <img src="/Pics/5.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[20s]" />
+  </div> -->
+
+  <!-- Overlay -->
+  <!-- <div class="absolute inset-0 bg-black/60"></div> -->
+
+  <!-- Content -->
+  <!-- <div class="relative z-10 h-full max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center md:justify-between text-white text-center md:text-left">
+     -->
+    <!-- Left: Hero Text -->
+    <!-- <div class="md:w-1/2 flex flex-col items-center md:items-start justify-center space-y-6">
+      <h3 class="text-xl md:text-2xl lg:text-3xl font-bold">Welcome to</h3>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Deeper Life Bible Church Rochester</h1>
+      <p class="text-lg md:text-xl lg:text-3xl mb-6">A place of worship, transformation, and purpose</p>
+      <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" 
+         target="_blank"
+         class="bg-red-600 hover:bg-blue-700 px-6 py-3 rounded-md text-white font-semibold transition">
+        Worship With Us
+      </a>
+    </div> -->
+
+    <!-- Right: One Glass Card -->
+    <!-- <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+      <div class="w-full max-w-sm bg-white/20 backdrop-blur-md border border-white/30 rounded-xl shadow-md p-6">
+        <h3 class="text-2xl font-bold text-center mb-4">Our Days of Meeting</h3> -->
+
+        <!-- Divider Group -->
+        <!-- <div class="space-y-4 text-center">
+          <div>
+            <h4 class="text-xl font-semibold">Sunday Worship Service</h4>
+            <p class="text-gray-200">Sundays @ 9:45 AM ET</p>
+          </div>
+          <div class="border-t border-white/30 pt-4">
+            <h4 class="text-xl font-semibold">Tuesday Bible Study</h4>
+            <p class="text-gray-200">Tuesdays @ 6:00 PM ET</p>
+          </div>
+          <div class="border-t border-white/30 pt-4">
+            <h4 class="text-xl font-semibold">Friday Revival Hour</h4>
+            <p class="text-gray-200">Fridays @ 6:00 PM ET</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Animation -->
+  <!-- <style>
+    @keyframes fade {
+      0%, 20% { opacity: 1; }
+      25%, 95% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .animate-fade { animation: fade 25s infinite; }
+    .delay-\[5s\]  { animation-delay: 5s; }
+    .delay-\[10s\] { animation-delay: 10s; }
+    .delay-\[15s\] { animation-delay: 15s; }
+    .delay-\[20s\] { animation-delay: 20s; }
+  </style>
+</section> -->
+
+
+<!-- Days of Meeting Section -->
+<section class="bg-gray py-8 mb-8">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Days of Meeting</h2>
+    <p class="text-gray-600 text-lg mb-8">
+      Join us each week as we gather to worship, grow in faith, and experience God’s presence together.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Sunday -->
+      <div class="relative w-full max-w-sm h-80 rounded-lg overflow-hidden group cursor-pointer mx-auto">
+        <img class="w-full h-full object-cover" src="/Pics/2.jpg" alt="choristers singing" />
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+          <img src="/icons/church.svg" alt="church icon" class="h-12 w-12 mb-2">
+          <h3 class="text-2xl md:text-3xl font-bold mb-2">Sunday Worship Service</h3>
+          <p class="text-lg max-w-xs font-medium">Sundays @ 9:45 AM ET</p>
+        </div>
+      </div>
+
+
+      <!-- Tuesday -->
+      <div class="relative w-full max-w-sm h-80 rounded-lg overflow-hidden group cursor-pointer mx-auto">
+        <img class="w-full h-full object-cover" src="/Pics/Bible.jpg" alt="choristers singing" />
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+          <img src="/icons/bible.svg" alt="church icon" class="h-12 w-12 mb-2">
+          <h3 class="text-2xl md:text-3xl font-bold mb-2">Tuesday Bible Study</h3>
+          <p class="text-lg max-w-xs font-medium">Tuesdays @ 6:00 PM ET</p>
+        </div>
+      </div>
+
+      <!-- Friday -->
+      <div class="relative w-full max-w-sm h-80 rounded-lg overflow-hidden group cursor-pointer mx-auto">
+        <img class="w-full h-full object-cover" src="/Pics/Revival.jpg" alt="choristers singing" />
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+          <img src="/icons/fire.svg" alt="fire icon" class="h-12 w-12 mb-2">
+          <h3 class="text-2xl md:text-3xl font-bold mb-2">Friday Revival Hour</h3>
+          <p class="text-lg max-w-xs font-medium">Fridays @ 6:00 PM ET</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Message from Our Pastor Section -->
+<section id="pastor" class="bg-white py-12">
+  <div class="max-w-7xl mx-auto px-6 text-center mb-10">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      Message from Our Pastor
+    </h2>
+  </div>
+
+  <!-- Content Layout -->
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-12">
+
+    <!-- Pastor Image -->
+    <div class="relative bg-white rounded-lg shadow p-2 rotate-1 hover:rotate-0 hover:scale-105 transition-transform duration-300 ease-in-out mx-auto w-full max-w-sm md:max-w-md">
+      <img 
+        src="/Pics/pastor_new.jpg" 
+        alt="Pastor Bolaji Thomas portrait" 
+        class="w-full h-full object-cover rounded-lg object-top">
+    </div>
+
+    <!-- Text Content -->
+    <div class="flex-1 text-gray-700 space-y-5">
+      <p class="text-lg leading-relaxed">
+        Beloved, it is with joy that I welcome you to Deeper Life Bible Church Rochester, NY — 
+        a family where hearts are mended, faith is strengthened, and lives are transformed by 
+        the power of God’s Word.
+      </p>
+      <p class="text-lg leading-relaxed">
+        In every service, we strive to create an atmosphere where you can encounter Christ personally, 
+        grow in grace, and fulfill your divine purpose. Our mission is to proclaim the unchanging truth 
+        of the gospel in a changing world and to see every believer equipped for victorious Christian living.
+      </p>
+      <p class="text-lg leading-relaxed">
+        I invite you to join us in fellowship, in prayer, and in service. Together, we can reflect the 
+        love of Christ to our community and beyond, standing as lights in a dark world and instruments 
+        of God’s peace.
+      </p>
+      <p class="text-lg leading-relaxed">
+        As you worship with us, may the Lord bless you, guide you, and grant you His abiding presence 
+        in every area of your life.
+      </p>
+      <p class="text-xl font-semibold text-gray-900 mt-6">— Pastor Bolaji Thomas</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Re-Occurring Events Section -->
+<section id="events" class="bg-gray-50 py-12">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-10">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
+        Re-occurring Events
+      </h2>
+      <p class="text-gray-600 text-lg lg:text-xl">
+        Stay connected and be part of our regular gatherings and programs.
+      </p>
+    </div>
+
+    <!-- Responsive Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Upstate Connect -->
+      <div class="rounded-xl overflow-hidden shadow-md border hover:shadow-lg transition">
+        <img src="/Pics/Upstate.svg" 
+             alt="Upstate Connect - DLBC Rochester Young Adults Ministry" 
+             class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Children's Bible Club -->
+      <div class="rounded-xl overflow-hidden shadow-md border hover:shadow-lg transition">
+        <img src="/Pics/Children.svg" 
+             alt="DLBC Rochester Children Ministry Bible Club" 
+             class="w-full h-auto object-cover">
+      </div>
+
+      <!-- GCK - Global Crusade with Kumuyi -->
+      <div class="rounded-xl overflow-hidden shadow-md border hover:shadow-lg transition">
+        <a href="https://gckhq.org" target="_blank" rel="noopener noreferrer" 
+          class="block rounded-xl overflow-hidden shadow-md border hover:shadow-lg transition">
+          <img src="/Pics/GCK.png" 
+              alt="Global Crusade with Kumuyi (GCK)" 
+              class="w-full h-auto object-cover">
+        </a>
+
+      </div>
+
+      <!-- Monthly Vigil -->
+      <div class="rounded-xl overflow-hidden shadow-md border hover:shadow-lg transition">
+        <img src="/Pics/Vigil.svg" 
+             alt="Monthly Vigil - DLBC Rochester" 
+             class="w-full h-auto object-cover">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- Top ThreeCards -->
+    <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> -->
+
+
+    <!-- Children's Bible Club -->
+      <!-- <div class="relative rounded-lg lg:rounded-xl overflow-hidden border h-80 flex items-center justify-center">
+        <img src="/Pics/children.jpg" alt="Children's Bible Club" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+          <h3 class="text-2xl font-semibold mb-4">Children’s Bible Club</h3>
+          <p class="text-lg mb-4 max-w-md">
+            Our Children’s Bible Club is for kids aged 12 and under — a time of learning God’s Word, singing, and fun every two weeks on Zoom.
+          </p>
+          <a href="https://zoom.us/yourchildrensclublink" 
+            target="_blank"
+            class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition">
+            Join on Zoom
+          </a>
+        </div>
+      </div> -->
+
+
+      <!-- Young Adults Fellowship -->
+      <!-- <div class="relative rounded-lg lg:rounded-xl overflow-hidden border h-80 flex items-center justify-center">
+        <img src="/Pics/youngadults.jpg" alt="Young adults worshipping"
+             class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+          <h3 class="text-2xl font-semibold mb-3">Young Adults Fellowship</h3>
+          <p class="text-lg mb-4">Our young adults meet bi-weekly on Wednesdays via Zoom for prayer, discussions, and fellowship.</p>
+          <a href="https://zoom.us/yourmeetinglink" target="_blank"
+             class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition">
+            Join via Zoom
+          </a>
+        </div>
+      </div> -->
+
+      <!-- GCK Event -->
+      <!-- <div class="relative rounded-lg lg:rounded-xl overflow-hidden border h-80 flex items-center justify-center">
+        <img src="/Pics/gck.jpg" alt="Pastor W.F. Kumuyi" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+          <h3 class="text-2xl font-semibold mb-4">Global Crusade with Kumuyi (GCK)</h3>
+          <p class="text-lg mb-4">Join us at the end of every month for this global life-transforming event.</p>
+          <a href="https://gckhq.org" target="_blank"
+             class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- Bottom Card (Full Width) -->
+    <!-- <div class="bg-[#061c36] text-white rounded-lg lg:rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row items-center md:items-stretch"> -->
+      <!-- Left Content -->
+      <!-- <div class="p-8 flex-1 flex flex-col justify-center space-y-8">
+        <span class="bg-red-600 flex flex-row justify-center items-center font-semibold gap-2 text-sm px-4 py-2 rounded-full self-start">
+          <img src="/icons/fire.svg" alt="calendar icon" class="h-6 w-6">
+          MONTHLY NIGHT VIGIL
+        </span>
+        <h3 class="text-3xl font-bold">Monthly Night of Power & Prayer</h3>
+        <p class="text-white/90 leading-relaxed text-lg">
+          Experience a night of worship, intense prayers, and breakthroughs at our monthly Night Vigil.
+          Come expecting divine encounters and renewed strength in God’s presence.
+        </p>
+
+        <div class="flex flex-col space-y-4 text-white/90 text-lg">
+          <div class="flex items-center space-x-2">
+            <img src="/icons/calendar.svg" alt="calendar icon" class="h-8 w-8">
+            <span>Last Friday of Every Month · 11:00 PM ET</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <img src="/icons/location.svg" alt="location icon" class="h-8 w-8">
+            <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank">
+              3699 West Henrietta Road, Rochester, NY, 14623
+            </a>
+          </div>
+        </div>
+
+        <a href="https://us02web.zoom.us/j/551024858?pwd=Zk05US9ieXF5aFVpWVlReXFSeDY3UT09"
+           target="_blank"
+           class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition self-start">
+          Join via Zoom
+        </a>
+      </div> -->
+
+      <!-- Right Image -->
+      <!-- <div class="flex-1 p-6">
+        <img src="/Pics/prayer.jpg" alt="Night Vigil Worship" class="hidden md:block w-full h-full object-cover rounded-lg">
+      </div>
+    </div> -->
+
+  <!-- </div>
+</section> -->
+
+
+
+
+<!-- Special Meetings Section -->
+<!-- <section id="special-meetings" class="bg-white py-12 lg:py-20">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-10">Special Meetings</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10"> -->
+
+      <!-- Young Adults Fellowship -->
+      <!-- <div class="relative rounded-xl overflow-hidden border h-80 flex items-center justify-center">
+        <img src="/Pics/youngadults.jpg" alt="Young adults worshipping" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70"></div> -->
+        <!-- <div class="relative z-10 text-white text-center px-4"> -->
+        <!-- <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"> -->
+          <!-- <img src="/icons/group.svg" alt="fire icon" class="h-12 w-12 mb-2"> -->
+          <!-- <h3 class="text-2xl font-semibold mb-3">Young Adults Fellowship</h3>
+          <p class="text-xl mb-4">We meet bi-weekly on Wednesdays via Zoom for prayer, discussions, and fellowship..</p>
+          <a href="https://zoom.us/yourmeetinglink"
+            target="_blank"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition">
+            Join on Zoom
+          </a>
+        </div>
+      </div> -->
+
+      <!-- GCK Event -->
+      <!-- <div class="relative rounded-xl overflow-hidden border h-80 flex items-center justify-center">
+        <img src="/Pics/gck.jpg" alt="Pastor W.F. Kumuyi standing behind a pulpit" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="relative z-10 text-white text-center px-4">
+          <h3 class="text-2xl font-semibold mb-4">Global Crusade with Kumuyi (GCK)</h3>
+          <p class="text-xl mb-4">Join us at the end of every month for this global life-transforming event.</p>
+          <a href="https://gckhq.org" 
+             target="_blank"
+             class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Our Locations Section -->
+<section id="locations" class="bg-white py-8">
+  <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+    <h2 class="text-2xl md:text-3xl font-bold text-black-800 mb-3">Our Locations</h2>
+    <p class="text-gray-600 text-lg lg:text-2xl">We are one family across multiple cities in Upstate New York.</p>
+  </div>
+  
+  <div class="max-w-6xl mx-auto px-6 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Rochester -->
+    <div class="bg-white rounded-xl shadow- p-8 text-center border border-gray-200">
+      <img src="/icons/blue-location-logo.svg" alt="Rochester" class="h-10 w-10 mx-auto mb-2">
+      <h3 class="text-xl font-semibold text-061c36 mb-2">Rochester, NY</h3>
+      <p class="text-gray-600 text-lg mb-3">3699 West Henrietta Road,<br/>Rochester, NY 14623</p>
+      <!-- <p class="text-gray-600 text-lg mb-2">(585) 260-1943</p>
+      <p class="text-gray-600 text-lg mb-3">(585) 355-0155</p> -->
+      <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank"
+         class="text-blue-700 hover:text-blue-900 font-medium underline">View on Map</a>
+    </div>
+
+    <!-- Buffalo -->
+    <div class="bg-white rounded-xl shadow- p-8 text-center border border-gray-200">
+      <img src="/icons/blue-location-logo.svg" alt="Buffalo" class="h-10 w-10 mx-auto mb-3">
+      <h3 class="text-xl font-semibold text-061c36 mb-2">Buffalo, NY</h3>
+      <p class="text-gray-600 text-lg mb-3">1138 Millersport Highway,<br/>Buffalo, NY 14226</p>
+      <a href="https://maps.app.goo.gl/gDEQ2PDXxi1dS7CY7" target="_blank"
+         class="text-blue-700 hover:text-blue-900 font-medium underline">View on Map</a>
+    </div>
+
+    <!-- Potsdam -->
+    <div class="bg-white rounded-xl shadow- p-8 text-center border border-gray-200">
+      <img src="/icons/blue-location-logo.svg" alt="Potsdam" class="h-10 w-10 mx-auto mb-3">
+      <h3 class="text-xl font-semibold text-061c36 mb-2">Potsdam, NY</h3>
+      <p class="text-gray-600 text-lg mb-3">208 Swan St,<br/>Potsdam, NY 13676</p>
+      <a href="https://maps.app.goo.gl/Loz4nztdJNNEJxbZA" target="_blank"
+         class="text-blue-700 hover:text-blue-900 font-medium underline">View on Map</a>
+    </div>
+
+  </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-[#061c36] text-gray-300 pt-8 pb-8">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 md:justify-items-center">
+
+    <!-- Column 1: Church Info -->
+     <div class="space-y-3">
+      <!-- Church Logo -->
+      <div class="flex items-center space-x-3 mb-4">
+        <img src="/Pics/logo.png" alt="Church Logo" class="h-12 w-12 object-contain">
+        <h3 class="script-font text-2xl font-semibold text-white">Deeper Life Bible Church Rochester NY</h3>
+      </div>
+
+      <!-- Address -->
+      <div class="flex items-start space-x-3">
+        <img src="/icons/location.svg" alt="Map Icon" class="h-6 w-6">
+        <p class="text-lg">
+          3699 West Henrietta Road,<br/>Rochester, NY 14623
+        </p>
+      </div>
+
+      <!-- Phone -->
+      <div class="flex items-center space-x-3">
+        <img src="/icons/phone.svg" alt="Phone Icon" class="h-6 w-6">
+        <p class="text-lg">+1 (585) 260-1943</p>
+      </div>
+
+      <!-- Email -->
+      <div class="flex items-center space-x-3">
+        <img src="/icons/mail.svg" alt="Mail Icon" class="h-6 w-6">
+        <p class="text-lg">dlbcrochester@gmail.com</p>
+      </div>
+    </div>
+
+
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h3 class="text-xl font-semibold text-white mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-lg">
+        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+        <!-- <li><a href="#special-meetings" class="hover:text-white transition">Special Meetings</a></li>
+        <li><a href="#pastor" class="hover:text-white transition">Message from Pastor</a></li>
+        <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li> -->
+        <li><a href="https://dclm.org/" class="hover:text-white transition">Global HQ</a></li>
+      </ul>
+    </div>
+
+        <!-- Column 3: Resources -->
+    <div>
+      <h3 class="text-xl font-semibold text-white mb-4">Locations</h3>
+      <ul class="space-y-2 text-lg">
+        <li><a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank" class="hover:text-white transition">Rochester, NY</a></li>
+        <li><a href="https://maps.app.goo.gl/gDEQ2PDXxi1dS7CY7" target="_blank" class="hover:text-white transition">Buffalo, NY</a></li>
+        <li><a href="https://maps.app.goo.gl/Loz4nztdJNNEJxbZA" target="_blank" class="hover:text-white transition">Potsdam, NY</a></li>
+      </ul>
+
+
+      <h3 class="text-xl font-semibold text-white mt-8 mb-4">Resources</h3>
+      <ul class="space-y-2 text-lg">
+        <li><a href="https://dailymanna.app/category/daily-manna/" class="hover:text-white transition">Daily Manna</a></li>
+        <li><a href="https://dailymanna.app/category/higher-everyday/" class="hover:text-white transition">Higher Everyday</a></li>
+        <li><a href="https://dailymanna.app/category/sincere-milk/" class="hover:text-white transition">Sincere Milk</a></li>
+      </ul>
+    </div>
+  </div> 
+
+
+  <!-- Bottom -->
+  <div class="border-t border-gray-600 mt-10 pt-6 text-center text-sm md:text-md lg:text-lg text-gray-400">
+    <p>&copy; <span id="year"></span> Deeper Life Bible Church Rochester NY</p>
+    <p>All rights reserved</p>
+  </div>
+
+  <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
