@@ -1,6 +1,50 @@
+/* Import Google Rochester font for script headings */
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
-  .script-font {
-    font-family: 'Rochester', cursive;
-  }
 
+/* ============================
+   Helvetica Font Family Setup
+   ============================ */
 
+/* Regular */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./Fonts/HelveticaNeue-Roman.woff2') format('woff2'),
+       url('./Fonts/HelveticaNeueRoman.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* improves performance */
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./Fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+       url('./Fonts/HelveticaNeueBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./Fonts/HelveticaNeue-Italic.woff2') format('woff2'),
+       url('./Fonts/HelveticaNeueItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ============================
+   Global Typography
+   ============================ */
+
+/* Use Helvetica for all text unless otherwise specified */
+body {
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* Rochester Script Font for Logo/Headings */
+.script-font {
+  font-family: 'Rochester', cursive;
+}
