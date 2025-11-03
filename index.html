@@ -13,7 +13,7 @@
 
 
 <!-- Navbar -->
-<nav class="bg-white fixed top-0 left-0 w-full z-50">
+<nav class="bg-gray-50 fixed top-0 left-0 w-full z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     
     <!-- Logo -->
@@ -23,7 +23,7 @@
     </a>
 
     <!-- Nav Links -->
-    <ul class="hidden md:flex space-x-8 text-gray-700 font-bold text-lg">
+    <ul class="hidden md:flex space-x-8 text-black font-bold text-lg">
       <li><a href="index.html" class="hover:text-red-600 transition">Home</a></li>
       <li><a href="about.html" class="hover:text-red-600 transition">About Us</a></li>
       <li><a href="#locations" class="hover:text-red-600 transition">Locations</a></li>
@@ -41,16 +41,14 @@
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
-    <ul class="flex flex-col space-y-2 p-4 text-gray-700 font-medium">
-      <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
-      <li><a href="about.html" class="hover:text-blue-600 transition">About Us</a></li>
-      <li><a href="#locations" class="hover:text-red-600 transition">Locations</a></li>
-      <!-- <li><a href="ministries.html" class="hover:text-blue-600 transition">Our Ministries</a></li>
-      <li><a href="resources.html" class="hover:text-blue-600 transition">Resources</a></li>
-      <li><a href="#contact" class="hover:text-blue-600 transition">Contact Us</a></li> -->
-      <li><a href="https://dclm.org" target="_blank" class="hover:text-blue-600 transition">Global HQ</a></li>
+    <ul class="flex flex-col divide-y divide-gray-200 text-black font-bold">
+      <li><a href="index.html" class="block py-6 px-6 hover:text-red-600 transition">Home</a></li>
+      <li><a href="about.html" class="block py-6 px-6 hover:text-red-600 transition">About Us</a></li>
+      <li><a href="#locations" class="block py-6 px-6 hover:text-red-600 transition">Locations</a></li>
+      <li><a href="https://dclm.org" target="_blank" class="block py-6 px-6 hover:text-red-600 transition">Global HQ</a></li>
     </ul>
   </div>
+
 
   <script>
     const btn = document.getElementById('menu-btn');
@@ -67,32 +65,32 @@
     <div class="flex items-center gap-3 mt-4 md:mt-0">
       <img src="./Icons/location.svg" alt="Address" class="h-8 w-8">
       <div>
-        <p class="font-semibold">Address</p>
-        <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank" rel="noopener noreferrer" class="hover:text-white text-gray-300">
+        <p>Address</p>
+        <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank" rel="noopener noreferrer" class="hover:text-white text-gray-300 font-bold">
           3699 West Henrietta Road, Rochester, NY 14623
         </a>
       </div>
     </div>
 
-    <div class="hidden md:block h-8 w-px bg-gray-300"></div>
+    <div class="hidden md:block items-center w-px bg-gray-300"></div>
 
     <!-- Phone -->
     <div class="flex items-center gap-3">
-      <img src="./Icons/phone.svg" alt="Phone" class="h-8 w-8">
+      <img src="./Icons/phone.svg" alt="Phone" class="h-6 w-6">
       <div>
-        <p class="font-semibold">Phone</p>
-        <p class="text-gray-300">+1 (585) 260-1943</p>
+        <p>Phone</p>
+        <p class="text-gray-300 font-bold">+1 (585) 260-1943</p>
       </div>
     </div>
 
-    <div class="hidden md:block h-8 w-px bg-gray-300"></div>
+    <div class="hidden md:block items-center w-px bg-gray-300"></div>
 
     <!-- Email -->
     <div class="flex items-center gap-3">
       <img src="./Icons/mail.svg" alt="Email" class="h-8 w-8">
       <div>
-        <p class="font-semibold">Email</p>
-        <a href="mailto:dlbcrochester@gmail.com" class="hover:text-white text-gray-300">dlbcrochester@gmail.com</a>
+        <p>Email</p>
+        <a href="mailto:dlbcrochester@gmail.com" class="hover:text-white text-gray-300 font-bold">dlbcrochester@gmail.com</a>
       </div>
     </div>
   </div>
@@ -142,7 +140,7 @@
       </h1>
     </div>
 
-    <p class="text-2xl md:text-3xl max-w-2xl md:max-w-3xl text-white">
+    <p class="text-2xl md:text-3xl max-w-2xl md:max-w-3xl text-white leading-relaxed">
       Holiness unto the Lord is our watchword and song. This is a call to purity,
       a life of purpose, and a passion for reaching the lost with the message of salvation.
     </p>
@@ -297,10 +295,10 @@
 
 
 <!-- Days of Meeting Section -->
-<section class="bg-gray py-8 mb-8">
+<section class="bg-gray-50 py-8 mb-12">
   <div class="max-w-7xl mx-auto px-6 text-center">
     <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Days of Meeting</h2>
-    <p class="text-gray-600 text-lg mb-8">
+    <p class="text-gray-600 text-lg md:text-2xl mb-8">
       Join us each week as we gather to worship, grow in faith, and experience God’s presence together.
     </p>
 
@@ -364,22 +362,22 @@
 
     <!-- Text Content -->
     <div class="flex-1 text-gray-700 space-y-5">
-      <p class="text-lg leading-relaxed">
+      <p class="text-lg md:text-xl leading-relaxed">
         Beloved, it is with joy that I welcome you to Deeper Life Bible Church Rochester, NY. We are 
         a family where hearts are mended, faith is strengthened, and lives are transformed by 
         the power of God’s Word.
       </p>
-      <p class="text-lg leading-relaxed">
+      <p class="text-lg md:text-xl leading-relaxed">
         In every service, we strive to create an atmosphere where you can encounter Christ personally, 
         grow in grace, and fulfill your divine purpose. Our mission is to proclaim the unchanging truth 
         of the gospel in a changing world and to see every believer equipped for victorious Christian living.
       </p>
-      <p class="text-lg leading-relaxed">
+      <p class="text-lg md:text-xl leading-relaxed">
         I invite you to join us in fellowship, in prayer, and in service. Together, we can reflect the 
         love of Christ to our community and beyond, standing as lights in a dark world and instruments 
         of God’s peace.
       </p>
-      <p class="text-lg leading-relaxed">
+      <p class="text-lg md:text-xl leading-relaxed">
         As you worship with us, may the Lord bless you, guide you, and grant you His abiding presence 
         in every area of your life.
       </p>
@@ -391,7 +389,7 @@
 
 
 <!-- Re-Occurring Events Section -->
-<section id="events" class="bg-gray-50 py-12">
+<section id="events" class="bg-gray-50 py-12 mb-12">
   <div class="max-w-7xl mx-auto px-6">
 
     <!-- Heading -->
@@ -399,7 +397,7 @@
       <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
         Re-occurring Events
       </h2>
-      <p class="text-gray-600 text-lg lg:text-xl">
+      <p class="text-gray-600 text-lg lg:text-2xl">
         Stay connected and be part of our regular gatherings and programs.
       </p>
     </div>
