@@ -38,31 +38,33 @@
 <body class="bg-gray-50 text-gray-900">
 
 <!-- Navbar -->
-<nav class="bg-gray-50 fixed top-0 left-0 w-full z-50">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<nav class="bg-gray-50 fixed top-0 left-0 w-full z-50 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
     
     <!-- Logo -->
-    <a href="index.html" class="flex items-center space-x-2">
-      <img src="./Pics/logo.png" alt="Logo" class="h-10 w-10 object-contain">
-      <span class="script-font text-4xl font-bold text-black-900">Deeper Life Bible Church Rochester NY</span>
+    <a href="index.html" class="flex items-center space-x-2 w-[85%] sm:w-auto">
+      <img src="./Pics/logo.png" alt="Logo" class="h-8 w-8 sm:h-10 sm:w-10 object-contain">
+      <span class="script-font text-2xl sm:text-3xl font-bold text-black">
+        Deeper Life Bible Church Rochester NY
+      </span>
     </a>
 
-    <!-- Nav Links -->
-    <ul class="hidden md:flex space-x-8 text-black font-bold text-lg">
+    <!-- Desktop Nav Links -->
+    <ul class="hidden lg:flex space-x-6 xl:space-x-8 text-black text-base xl:text-lg font-bold">
       <li><a href="index.html" class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Home</a></li>
       <li><a href="about.html" class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">About Us</a></li>
       <li><a href="index.html#locations" class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Locations</a></li>
       <li>
         <a href="https://youtube.com/@dlbcrochester?si=3mYH8KDlqaJYVslH"
           target="_blank" rel="noopener noreferrer"
-          class="flex items-center gap-2 decoration-2 underline-offset-8 transition">
+          class="flex items-center gap-2 transition">
           <i class="fa-brands fa-youtube text-red-600 text-lg"></i>
-          <span class="hover:underline hover:decoration-red-600 decoration-2">YouTube</span>
+          <span class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8">YouTube</span>
         </a>
       </li>
       <li>
-        <a href="https://dclm.org" 
-          target="_blank" 
+        <a href="https://dclm.org"
+          target="_blank"
           rel="noopener noreferrer"
           class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
           Global HQ
@@ -70,15 +72,14 @@
       </li>
     </ul>
 
-    <!-- Mobile Menu Button -->
-
-    <button id="menu-btn" class="md:hidden focus:outline-none">
-      <img src="./Icons/hamburger.svg" alt="Menu" class="h-6 w-6">
+    <!-- Mobile/Tablet Menu Button -->
+    <button id="menu-btn" class="lg:hidden focus:outline-none">
+      <img src="./Icons/hamburger.svg" alt="Menu" class="h-8 w-8">
     </button>
   </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+  <!-- Mobile/Tablet Menu -->
+  <div id="mobile-menu" class="hidden bg-white shadow-md lg:hidden">
     <ul class="flex flex-col divide-y divide-gray-200 text-black font-bold">
       <li><a href="index.html" class="block py-6 px-6 hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Home</a></li>
       <li><a href="about.html" class="block py-6 px-6 hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">About Us</a></li>
@@ -86,12 +87,12 @@
       <li>
         <a href="https://youtube.com/@dlbcrochester?si=3mYH8KDlqaJYVslH"
           target="_blank" rel="noopener noreferrer"
-          class="flex items-center gap-2 px-6 py-6 transition">
+          class="flex items-center gap-2 px-6 py-4 hover:bg-gray-100 transition">
           <i class="fa-brands fa-youtube text-red-600 text-lg"></i>
-          <span class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8">YouTube</span>
+          <span>YouTube</span>
         </a>
       </li>
-      <li class="py-6 px-6">
+      <li class="py-4 px-6">
         <a href="https://dclm.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -102,7 +103,6 @@
     </ul>
   </div>
 
-
   <script>
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
@@ -111,56 +111,76 @@
 </nav>
 
 <!-- Info Bar -->
-<section class="bg-[#061c36] text-white mt-24 md:mt-16 text-md py-4 md:fixed top-0 left-0 z-50 w-full">
-  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-right justify-between gap-6 md:gap-0">
-    
+<!-- <section class="bg-[#061c36] text-white mt-24 md:mt-20 py-6 w-full"> -->
+<section class="bg-[#061c36] text-white mt-20 md:mt-16 text-md py-6 lg:fixed top-0 left-0 z-50 w-full">
+<!-- <section class="bg-[#061c36] text-white mt-20 [@media(max-width:560px)]:mt-12 md:mt-16 text-md py-6 lg:fixed top-0 left-0 z-50 w-full"> -->
+  <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-0">
+
     <!-- Address -->
-    <div class="flex items-center gap-3 mt-4 md:mt-0">
+    <div class="flex items-start gap-3 w-full lg:w-auto">
       <img src="./Icons/location.svg" alt="Address" class="h-8 w-8">
       <div>
-        <p>Address</p>
-        <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300 text-white font-bold">
+        <p class="text-sm sm:text-base">Address</p>
+        <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="hover:text-gray-300 text-white font-bold text-sm sm:text-base">
           3699 West Henrietta Road, Rochester, NY 14623
         </a>
       </div>
     </div>
 
-    <div class="hidden md:block items-center w-px bg-gray-300"></div>
+    <!-- Divider (desktop only) -->
+    <div class="hidden lg:block w-px bg-gray-300 h-10"></div>
 
     <!-- Phone -->
-    <div class="flex items-center gap-3">
-      <img src="./Icons/phone.svg" alt="Phone" class="h-6 w-6">
+    <div class="flex items-start gap-3 w-full lg:w-auto">
+      <img src="./Icons/phone.svg" alt="Phone" class="h-8 w-8">
       <div>
-        <p>Phone</p>
-        <p class="text-white font-bold">+1 (585) 260-1943</p>
+        <p class="text-sm sm:text-base">Phone</p>
+        <p class="text-white font-bold text-sm sm:text-base">+1 (585) 260-1943</p>
       </div>
     </div>
 
-    <div class="hidden md:block items-center w-px bg-gray-300"></div>
+    <!-- Divider (desktop only) -->
+    <div class="hidden lg:block w-px bg-gray-300 h-10"></div>
 
     <!-- Email -->
-    <div class="flex items-center gap-3">
+    <div class="flex items-start gap-3 w-full lg:w-auto">
       <img src="./Icons/mail.svg" alt="Email" class="h-8 w-8">
       <div>
-        <p>Email</p>
-        <a href="mailto:dlbcrochester@gmail.com" class="hover:text-gray-300 text-white font-bold">dlbcrochester@gmail.com</a>
+        <p class="text-sm sm:text-base">Email</p>
+        <a href="mailto:dlbcrochester@gmail.com"
+           class="hover:text-gray-300 text-white font-bold text-sm sm:text-base">
+          dlbcrochester@gmail.com
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="relative w-full h-[100vh] overflow-hidden md:mt-16">
-  <div class="absolute inset-0 w-full h-full">
-    <img src="./Pics/dclm-banner.jpg" alt="DCLM Banner" class="w-full h-full object-cover">
-  </div>
 
-  <div class="absolute inset-0 flex items-center justify-center bg-black/40">
-    <h1 class="script-font text-4xl md:text-7xl font-bold text-white">About Deeper Christian Life Ministry</h1>
+<section class="relative w-full h-screen overflow-hidden lg:mt-16">
+  <!-- Background Image -->
+  <img src="./Pics/dclm-banner.jpg" 
+       alt="DCLM Banner" 
+       class="absolute inset-0 w-full h-full object-cover">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Centered Text -->
+  <div class="absolute inset-0 flex items-center justify-center text-center">
+    <h1 class="script-font text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white px-6">
+      About Deeper Christian Life Ministry
+    </h1>
   </div>
 </section>
 
+
+
 <!-- Content Section -->
-<section class="bg-white py-16">
+<section class="bg-white py-12">
   <div class="max-w-5xl mx-auto px-6 text-xl text-gray-700 leading-relaxed space-y-6 text-justify">
     
     <p>

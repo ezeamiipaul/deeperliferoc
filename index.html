@@ -39,34 +39,34 @@
 
 <body class="bg-gray-50 text-gray-900">
 
-
-
 <!-- Navbar -->
-<nav class="bg-gray-50 fixed top-0 left-0 w-full z-50">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<nav class="bg-gray-50 fixed top-0 left-0 w-full z-50 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
     
     <!-- Logo -->
-    <a href="index.html" class="flex items-center space-x-2">
-      <img src="./Pics/logo.png" alt="Logo" class="h-10 w-10 object-contain">
-      <span class="script-font text-4xl font-bold text-black-900">Deeper Life Bible Church Rochester NY</span>
+    <a href="index.html" class="flex items-center space-x-2 w-[85%] sm:w-auto">
+      <img src="./Pics/logo.png" alt="Logo" class="h-8 w-8 sm:h-10 sm:w-10 object-contain">
+      <span class="script-font text-2xl sm:text-3xl font-bold text-black">
+        Deeper Life Bible Church Rochester NY
+      </span>
     </a>
 
-    <!-- Nav Links -->
-    <ul class="hidden md:flex space-x-8 text-black text-lg font-bold">
+    <!-- Desktop Nav Links -->
+    <ul class="hidden lg:flex space-x-6 xl:space-x-8 text-black text-base xl:text-lg font-bold">
       <li><a href="index.html" class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Home</a></li>
       <li><a href="about.html" class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">About Us</a></li>
       <li><a href="#locations" class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Locations</a></li>
       <li>
         <a href="https://youtube.com/@dlbcrochester?si=3mYH8KDlqaJYVslH"
           target="_blank" rel="noopener noreferrer"
-          class="flex items-center gap-2 decoration-2 underline-offset-8 transition">
+          class="flex items-center gap-2 transition">
           <i class="fa-brands fa-youtube text-red-600 text-lg"></i>
-          <span class="hover:underline hover:decoration-red-600 decoration-2">YouTube</span>
+          <span class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8">YouTube</span>
         </a>
       </li>
       <li>
-        <a href="https://dclm.org" 
-          target="_blank" 
+        <a href="https://dclm.org"
+          target="_blank"
           rel="noopener noreferrer"
           class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
           Global HQ
@@ -74,15 +74,14 @@
       </li>
     </ul>
 
-    <!-- Mobile Menu Button -->
-
-    <button id="menu-btn" class="md:hidden focus:outline-none">
-      <img src="./Icons/hamburger.svg" alt="Menu" class="h-6 w-6">
+    <!-- Mobile/Tablet Menu Button -->
+    <button id="menu-btn" class="lg:hidden focus:outline-none">
+      <img src="./Icons/hamburger.svg" alt="Menu" class="h-8 w-8">
     </button>
   </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+  <!-- Mobile/Tablet Menu -->
+  <div id="mobile-menu" class="hidden bg-white shadow-md lg:hidden">
     <ul class="flex flex-col divide-y divide-gray-200 text-black font-bold">
       <li><a href="index.html" class="block py-6 px-6 hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">Home</a></li>
       <li><a href="about.html" class="block py-6 px-6 hover:underline hover:decoration-red-600 decoration-2 underline-offset-8 transition">About Us</a></li>
@@ -90,12 +89,12 @@
       <li>
         <a href="https://youtube.com/@dlbcrochester?si=3mYH8KDlqaJYVslH"
           target="_blank" rel="noopener noreferrer"
-          class="flex items-center gap-2 px-6 py-6 transition">
+          class="flex items-center gap-2 px-6 py-4 hover:bg-gray-100 transition">
           <i class="fa-brands fa-youtube text-red-600 text-lg"></i>
-          <span class="hover:underline hover:decoration-red-600 decoration-2 underline-offset-8">YouTube</span>
+          <span>YouTube</span>
         </a>
       </li>
-      <li class="py-6 px-6">
+      <li class="py-4 px-6">
         <a href="https://dclm.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -106,7 +105,6 @@
     </ul>
   </div>
 
-
   <script>
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
@@ -115,46 +113,57 @@
 </nav>
 
 <!-- Info Bar -->
-<section class="bg-[#061c36] text-white mt-24 md:mt-16 text-md py-4 md:fixed top-0 left-0 z-50 w-full">
-  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-right justify-between gap-6 md:gap-0">
-    
+<!-- <section class="bg-[#061c36] text-white mt-24 md:mt-20 py-6 w-full"> -->
+<section class="bg-[#061c36] text-white mt-20 md:mt-16 text-md py-6 lg:fixed top-0 left-0 z-50 w-full">
+<!-- <section class="bg-[#061c36] text-white mt-20 [@media(max-width:560px)]:mt-12 md:mt-16 text-md py-6 lg:fixed top-0 left-0 z-50 w-full"> -->
+  <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-0">
+
     <!-- Address -->
-    <div class="flex items-center gap-3 mt-4 md:mt-0">
+    <div class="flex items-start gap-3 w-full lg:w-auto">
       <img src="./Icons/location.svg" alt="Address" class="h-8 w-8">
       <div>
-        <p>Address</p>
-        <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300 text-white font-bold">
+        <p class="text-sm sm:text-base">Address</p>
+        <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="hover:text-gray-300 text-white font-bold text-sm sm:text-base">
           3699 West Henrietta Road, Rochester, NY 14623
         </a>
       </div>
     </div>
 
-    <div class="hidden md:block items-center w-px bg-gray-300"></div>
+    <!-- Divider (desktop only) -->
+    <div class="hidden lg:block w-px bg-gray-300 h-10"></div>
 
     <!-- Phone -->
-    <div class="flex items-center gap-3">
-      <img src="./Icons/phone.svg" alt="Phone" class="h-6 w-6">
+    <div class="flex items-start gap-3 w-full lg:w-auto">
+      <img src="./Icons/phone.svg" alt="Phone" class="h-8 w-8">
       <div>
-        <p>Phone</p>
-        <p class="text-white font-bold">+1 (585) 260-1943</p>
+        <p class="text-sm sm:text-base">Phone</p>
+        <p class="text-white font-bold text-sm sm:text-base">+1 (585) 260-1943</p>
       </div>
     </div>
 
-    <div class="hidden md:block items-center w-px bg-gray-300"></div>
+    <!-- Divider (desktop only) -->
+    <div class="hidden lg:block w-px bg-gray-300 h-10"></div>
 
     <!-- Email -->
-    <div class="flex items-center gap-3">
+    <div class="flex items-start gap-3 w-full lg:w-auto">
       <img src="./Icons/mail.svg" alt="Email" class="h-8 w-8">
       <div>
-        <p>Email</p>
-        <a href="mailto:dlbcrochester@gmail.com" class="hover:text-gray-300 text-white font-bold">dlbcrochester@gmail.com</a>
+        <p class="text-sm sm:text-base">Email</p>
+        <a href="mailto:dlbcrochester@gmail.com"
+           class="hover:text-gray-300 text-white font-bold text-sm sm:text-base">
+          dlbcrochester@gmail.com
+        </a>
       </div>
     </div>
   </div>
 </section>
 
+
 <!-- Hero Section with Responsive Carousel -->
-<section id="home" class="relative w-full overflow-hidden md:mt-16">
+<section id="home" class="relative w-full overflow-hidden lg:mt-40">
 
   <!-- =================== DESKTOP CAROUSEL =================== -->
   <div class="hidden md:block relative w-full h-[100vh] overflow-hidden z-0">
@@ -197,7 +206,7 @@
       </h1>
     </div>
 
-    <p class="text-2xl md:text-3xl max-w-2xl md:max-w-3xl text-white leading-relaxed">
+    <p class="text-xl md:text-2xl max-w-2xl md:max-w-3xl text-white leading-relaxed">
       Holiness unto the Lord is our watchword and song. This is a call to purity,
       a life of purpose, and a passion for reaching the lost with the message of salvation.
     </p>
@@ -279,82 +288,10 @@
 
 </section>
 
-
-
-<!-- Hero Section with Carousel and Single Glass Card -->
-<!-- <section id="home" class="relative w-full h-[120vh] overflow-hidden md:mt-16"> -->
-
-  <!-- Carousel -->
-  <!-- <div class="absolute inset-0 w-full h-full">
-    <img src="/Pics/1.jpg" class="absolute inset-0 w-full h-full object-cover animate-fade" />
-    <img src="/Pics/2.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[5s]" />
-    <img src="/Pics/3.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[10s]" />
-    <img src="/Pics/4.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[15s]" />
-    <img src="/Pics/5.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade delay-[20s]" />
-  </div> -->
-
-  <!-- Overlay -->
-  <!-- <div class="absolute inset-0 bg-black/60"></div> -->
-
-  <!-- Content -->
-  <!-- <div class="relative z-10 h-full max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center md:justify-between text-white text-center md:text-left">
-     -->
-    <!-- Left: Hero Text -->
-    <!-- <div class="md:w-1/2 flex flex-col items-center md:items-start justify-center space-y-6">
-      <h3 class="text-xl md:text-2xl lg:text-3xl font-bold">Welcome to</h3>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Deeper Life Bible Church Rochester</h1>
-      <p class="text-lg md:text-xl lg:text-3xl mb-6">A place of worship, transformation, and purpose</p>
-      <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" 
-         target="_blank"
-         class="bg-red-600 hover:bg-blue-700 px-6 py-3 rounded-md text-white font-semibold transition">
-        Worship With Us
-      </a>
-    </div> -->
-
-    <!-- Right: One Glass Card -->
-    <!-- <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-      <div class="w-full max-w-sm bg-white/20 backdrop-blur-md border border-white/30 rounded-xl shadow-md p-6">
-        <h3 class="text-2xl font-bold text-center mb-4">Our Days of Meeting</h3> -->
-
-        <!-- Divider Group -->
-        <!-- <div class="space-y-4 text-center">
-          <div>
-            <h4 class="text-xl font-semibold">Sunday Worship Service</h4>
-            <p class="text-gray-200">Sundays @ 9:45 AM ET</p>
-          </div>
-          <div class="border-t border-white/30 pt-4">
-            <h4 class="text-xl font-semibold">Tuesday Bible Study</h4>
-            <p class="text-gray-200">Tuesdays @ 6:00 PM ET</p>
-          </div>
-          <div class="border-t border-white/30 pt-4">
-            <h4 class="text-xl font-semibold">Friday Revival Hour</h4>
-            <p class="text-gray-200">Fridays @ 6:00 PM ET</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Animation -->
-  <!-- <style>
-    @keyframes fade {
-      0%, 20% { opacity: 1; }
-      25%, 95% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-    .animate-fade { animation: fade 25s infinite; }
-    .delay-\[5s\]  { animation-delay: 5s; }
-    .delay-\[10s\] { animation-delay: 10s; }
-    .delay-\[15s\] { animation-delay: 15s; }
-    .delay-\[20s\] { animation-delay: 20s; }
-  </style>
-</section> -->
-
-
 <!-- Days of Meeting Section -->
 <section class="bg-gray-50 py-8 mb-12">
   <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Days of Meeting</h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Our Days of Meeting</h2>
     <p class="text-gray-600 text-lg md:text-2xl mb-8">
       Join us each week as we gather to worship, grow in faith, and experience God’s presence together.
     </p>
@@ -401,7 +338,7 @@
 <!-- Message from Our Pastor Section -->
 <section id="pastor" class="bg-white py-12">
   <div class="max-w-7xl mx-auto px-6 text-center mb-10">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
       Message from Our Pastor
     </h2>
   </div>
@@ -499,155 +436,6 @@
   </div>
 </section>
 
-
-
-
-
-
-    <!-- Top ThreeCards -->
-    <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> -->
-
-
-    <!-- Children's Bible Club -->
-      <!-- <div class="relative rounded-lg lg:rounded-xl overflow-hidden border h-80 flex items-center justify-center">
-        <img src="/Pics/children.jpg" alt="Children's Bible Club" class="absolute inset-0 w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-black/70"></div>
-
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-          <h3 class="text-2xl font-semibold mb-4">Children’s Bible Club</h3>
-          <p class="text-lg mb-4 max-w-md">
-            Our Children’s Bible Club is for kids aged 12 and under — a time of learning God’s Word, singing, and fun every two weeks on Zoom.
-          </p>
-          <a href="https://zoom.us/yourchildrensclublink" 
-            target="_blank"
-            class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition">
-            Join on Zoom
-          </a>
-        </div>
-      </div> -->
-
-
-      <!-- Young Adults Fellowship -->
-      <!-- <div class="relative rounded-lg lg:rounded-xl overflow-hidden border h-80 flex items-center justify-center">
-        <img src="/Pics/youngadults.jpg" alt="Young adults worshipping"
-             class="absolute inset-0 w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-black/70"></div>
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-          <h3 class="text-2xl font-semibold mb-3">Young Adults Fellowship</h3>
-          <p class="text-lg mb-4">Our young adults meet bi-weekly on Wednesdays via Zoom for prayer, discussions, and fellowship.</p>
-          <a href="https://zoom.us/yourmeetinglink" target="_blank"
-             class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition">
-            Join via Zoom
-          </a>
-        </div>
-      </div> -->
-
-      <!-- GCK Event -->
-      <!-- <div class="relative rounded-lg lg:rounded-xl overflow-hidden border h-80 flex items-center justify-center">
-        <img src="/Pics/gck.jpg" alt="Pastor W.F. Kumuyi" class="absolute inset-0 w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-black/70"></div>
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-          <h3 class="text-2xl font-semibold mb-4">Global Crusade with Kumuyi (GCK)</h3>
-          <p class="text-lg mb-4">Join us at the end of every month for this global life-transforming event.</p>
-          <a href="https://gckhq.org" target="_blank"
-             class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition">
-            Learn More
-          </a>
-        </div>
-      </div>
-    </div> -->
-
-
-    <!-- Bottom Card (Full Width) -->
-    <!-- <div class="bg-[#061c36] text-white rounded-lg lg:rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row items-center md:items-stretch"> -->
-      <!-- Left Content -->
-      <!-- <div class="p-8 flex-1 flex flex-col justify-center space-y-8">
-        <span class="bg-red-600 flex flex-row justify-center items-center font-semibold gap-2 text-sm px-4 py-2 rounded-full self-start">
-          <img src="/icons/fire.svg" alt="calendar icon" class="h-6 w-6">
-          MONTHLY NIGHT VIGIL
-        </span>
-        <h3 class="text-3xl font-bold">Monthly Night of Power & Prayer</h3>
-        <p class="text-white/90 leading-relaxed text-lg">
-          Experience a night of worship, intense prayers, and breakthroughs at our monthly Night Vigil.
-          Come expecting divine encounters and renewed strength in God’s presence.
-        </p>
-
-        <div class="flex flex-col space-y-4 text-white/90 text-lg">
-          <div class="flex items-center space-x-2">
-            <img src="/icons/calendar.svg" alt="calendar icon" class="h-8 w-8">
-            <span>Last Friday of Every Month · 11:00 PM ET</span>
-          </div>
-          <div class="flex items-center space-x-2">
-            <img src="/icons/location.svg" alt="location icon" class="h-8 w-8">
-            <a href="https://maps.app.goo.gl/DWS2Xr3d57TEEyFD9" target="_blank">
-              3699 West Henrietta Road, Rochester, NY, 14623
-            </a>
-          </div>
-        </div>
-
-        <a href="https://us02web.zoom.us/j/551024858?pwd=Zk05US9ieXF5aFVpWVlReXFSeDY3UT09"
-           target="_blank"
-           class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition self-start">
-          Join via Zoom
-        </a>
-      </div> -->
-
-      <!-- Right Image -->
-      <!-- <div class="flex-1 p-6">
-        <img src="/Pics/prayer.jpg" alt="Night Vigil Worship" class="hidden md:block w-full h-full object-cover rounded-lg">
-      </div>
-    </div> -->
-
-  <!-- </div>
-</section> -->
-
-
-
-
-<!-- Special Meetings Section -->
-<!-- <section id="special-meetings" class="bg-white py-12 lg:py-20">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-10">Special Meetings</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10"> -->
-
-      <!-- Young Adults Fellowship -->
-      <!-- <div class="relative rounded-xl overflow-hidden border h-80 flex items-center justify-center">
-        <img src="/Pics/youngadults.jpg" alt="Young adults worshipping" class="absolute inset-0 w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-black/70"></div> -->
-        <!-- <div class="relative z-10 text-white text-center px-4"> -->
-        <!-- <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"> -->
-          <!-- <img src="/icons/group.svg" alt="fire icon" class="h-12 w-12 mb-2"> -->
-          <!-- <h3 class="text-2xl font-semibold mb-3">Young Adults Fellowship</h3>
-          <p class="text-xl mb-4">We meet bi-weekly on Wednesdays via Zoom for prayer, discussions, and fellowship..</p>
-          <a href="https://zoom.us/yourmeetinglink"
-            target="_blank"
-            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition">
-            Join on Zoom
-          </a>
-        </div>
-      </div> -->
-
-      <!-- GCK Event -->
-      <!-- <div class="relative rounded-xl overflow-hidden border h-80 flex items-center justify-center">
-        <img src="/Pics/gck.jpg" alt="Pastor W.F. Kumuyi standing behind a pulpit" class="absolute inset-0 w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-black/70"></div>
-        <div class="relative z-10 text-white text-center px-4">
-          <h3 class="text-2xl font-semibold mb-4">Global Crusade with Kumuyi (GCK)</h3>
-          <p class="text-xl mb-4">Join us at the end of every month for this global life-transforming event.</p>
-          <a href="https://gckhq.org" 
-             target="_blank"
-             class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section> -->
-
-
 <!-- Our Locations Section -->
 <section id="locations" class="bg-white py-8">
   <div class="max-w-7xl mx-auto px-6 text-center mb-12">
@@ -691,10 +479,6 @@
 
   </div>
 </section>
-
-
-
-
 
 <!-- Footer -->
 <footer class="bg-[#061c36] text-gray-300 pt-8 pb-8">
@@ -773,13 +557,6 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </footer>
-
-
-
-
-
-
-
 
 </body>
 </html>
