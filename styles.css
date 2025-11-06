@@ -1,9 +1,10 @@
 /* Import Google Rochester font for script headings */
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 
-/* ============================
+/* ====================================
    Helvetica Font Family Setup
-   ============================ */
+   (Custom local font loading)
+   ==================================== */
 
 /* Regular */
 @font-face {
@@ -12,7 +13,7 @@
        url('./Fonts/HelveticaNeueRoman.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap; /* improves performance */
+  font-display: swap;
 }
 
 /* Bold */
@@ -47,4 +48,50 @@ body {
 /* Rochester Script Font for Logo/Headings */
 .script-font {
   font-family: 'Rochester', cursive;
+}
+
+/* ===================================
+   CAROUSEL ANIMATIONS
+   (Defines the staggered fade for 8 images over a 40s cycle)
+   =================================== */
+
+/* ======= UNIVERSAL CAROUSEL FADE ANIMATION ======= */
+.carousel img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 40s infinite linear;
+}
+
+/* Keyframes – ensures continuous transitions */
+@keyframes fade {
+  0%   { opacity: 0; }
+  2.5% { opacity: 1; }
+  12.5% { opacity: 1; }
+  15%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Assign animation delays automatically */
+.carousel img:nth-child(1) { animation-delay: 0s; }
+.carousel img:nth-child(2) { animation-delay: 5s; }
+.carousel img:nth-child(3) { animation-delay: 10s; }
+.carousel img:nth-child(4) { animation-delay: 15s; }
+.carousel img:nth-child(5) { animation-delay: 20s; }
+.carousel img:nth-child(6) { animation-delay: 25s; }
+.carousel img:nth-child(7) { animation-delay: 30s; }
+.carousel img:nth-child(8) { animation-delay: 35s; }
+
+/* Smooth crossfade transition */
+.carousel img {
+  transition: opacity 1.5s ease-in-out;
+}
+
+/* Ensures perfect looping continuity */
+.carousel {
+  position: relative;
+  overflow: hidden;
 }
